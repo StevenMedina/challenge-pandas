@@ -1,0 +1,8 @@
+# Env
+python-dotenv==0.13.0
+
+# Pandas
+pandas==1.0.5
+
+# Requests
+requests==2.24.0
