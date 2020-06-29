@@ -11,11 +11,14 @@ class SQLite:
         self._db_file = settings.DB_FILE
         self._sql_statement = sql_statement
 
+    def execute(self):
         self._connect()
 
         self._set_cursor()
 
         self._execute_statement()
+
+        return self._connection
 
     def _connect(self):
         try:
