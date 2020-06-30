@@ -35,7 +35,7 @@ class TestThirdPartyService:
                 "population": 48759958,
             },
         ]
-        response = FactoryProcess._call_rest_countries_api()
+        response = FactoryProcess._call_rest_countries_api(region="Americas")
 
         assert "Afghanistan" == response[0]["name"]
         assert "Colombia" in response[1]["name"]
