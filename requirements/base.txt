@@ -6,3 +6,6 @@ pandas==1.0.5
 
 # Requests
 requests==2.24.0
+
+# Pytest
+pytest==5.4.3

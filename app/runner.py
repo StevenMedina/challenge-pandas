@@ -14,10 +14,12 @@ class FactoryProcess:
     def execute(self):
         self._factory_process()
 
+    @classmethod
     def _call_rapid_api(self):
         service_rapid_api = ServiceRapidAPI(request_url="all", method="get")
         return service_rapid_api.execute()
 
+    @classmethod
     def _call_rest_countries_api(self, region: str):
         service_rapid_api = ServiceRestCountriesAPI(request_url=f"region/{region}", method="get")
         return service_rapid_api.execute()

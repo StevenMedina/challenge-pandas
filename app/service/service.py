@@ -41,7 +41,7 @@ class ServiceRequestHandler(ABC):
         self._request = Request(
             url=self._url,
             method=self._method,
-            headers=self._headers
+            headers=self._headers,
         ).prepare()
 
     def _send_request(self) -> Request:
